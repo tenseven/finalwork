@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>管理人员登录</title>
+        <style>
+            
+            .list{text-align:center;float:left;list-style:none;color:rgb(241, 133, 133);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+            .div1{background-color:rgba(80,82,82);font-size:26px;padding-top:0.5%;padding-bottom:4%;margin-top:-1%;margin-left:-1%;margin-bottom:3%;}
+            .list2{list-style: none;font-size:25px;margin-top:20%;margin-bottom:6%;}
+            .div2{text-align: center;font-size: 30px;margin-top:5%;padding-top:3%;padding-bottom:8%;border-color:rgb(80,80,82);border-style:solid;margin-left:35%;margin-right:37%;padding-left: 5%;padding-right: 14%;}
+            .denglubox{border-style: solid;margin-bottom:10%;border-color:white;background-color: rgb(80, 82, 82);color:rgb(243, 240, 240);border-radius:10px;}
+            .confirm{font-size:80%;border-style: solid;color:rgb(80,80,82);background-color: white;border-color:rgb(80,80,82);border-radius:5px;}
+        </style>
+        <script type="text/javascript" src="admin_login.js"></script>
+        <script type="text/javascript" src="donghua.js"></script>
+
+    </head>
+    <body>
+        
+        <div class="div1"><ul>
+            <li class="list"><a style="text-decoration:none;color:white;" href="shouye.html">首页</a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href>管理员登录</a>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href="signup_login.html">学生登录</a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href="upwenjian.html">新书上架</a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href></a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href></a></li>
+           </ul>
+        </div>
+        <div class="div2">
+            
+            <div>
+                <table cellpadding=17>
+                    <tr><td></td><td style="color:rgba(26, 25, 25, 0.863)">登录</td><td></td></tr>
+                <tr><td><img src="photo/guanli32px.png"></td>  <td><input placeholder="工号：" style="height: 23px;background-color: rgba(247, 252, 177, 0.918);" id="admin_number" type="text" autofocus="autofocus"></td></tr>
+                <tr><td><img src="photo/password32px.png"></td>  <td><input placeholder="请输入密码：" style="height: 23px;background-color: rgba(247, 252, 177, 0.918);" id="password" type="password" autofocus="autofocus"></td></tr>
+                <tr><td></td><td><button class="confirm" onclick=admin_login() onmouseover="change_confirmbox()" onmouseout="huanyuanconfirm()" id="confirmbox">确认</button></td><td></td></tr>
+            </table>
+            <div id="response_msg" style="font-size: 35%;color:red"></div>
+
+            </div>
+        </div>
+       
+    </body>
+</html>

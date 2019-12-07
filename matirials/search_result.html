@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>搜索结果</title>
+        <style>
+            .main{background-color: white;}
+            .list{text-align:center;float:left;list-style:none;color:rgb(241, 133, 133);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+            .list3{color:white;text-align:center;float:left;list-style:none;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+            .div1{background-color: rgb(80, 82, 82);font-size:26px;padding-top:0.5%;padding-bottom:4%;margin-top:-1%;margin-left:-1%;margin-bottom:3%;}
+            .div2{margin-bottom:3%;margin-top: 3%;margin-right:20%;}
+            .list2{text-align:center;list-style:none;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:aqua;}
+            
+            .bookunit{margin-top: 3%;}
+            .listminitab2{float:left;display: block;text-indent:2em;width:35%;}
+            .listminitab{list-style:none;}
+            td {
+                width:70%;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                }
+           
+        </style>
+        <script type="text/javascript" src="searchbook.js"></script>
+        <script type="text/javascript" src="donghua.js"></script>
+        <script type="text/javascript" src="admin_delete.js"></script>
+        <script type="text/javascript" src="storage_trans.js"></script>
+    </head>
+    <body >
+        <div class="main">
+        <div class="div1"><ul>
+            <li class="list"><a style="text-decoration:none;color:white;" href="shouye.html">首页</a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href="admin_login.html">管理员登录</a>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href="signup_login.html">学生登录</a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href="upwenjian.html">新书上架</a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><a style="text-decoration:none;color:white;" href></a></li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="list"><table cellspacing=0 ><tr><td style="color:white" >搜索&nbsp&nbsp </tb><tb><input placeholder="搜索内容为空则为个人下载记录" style="height:25px;width:200px;" id="search_content" type="text" style="border-radius: 2px;" autofocus="autofocus;"></td><td><input type="image" src="photo/sousuo32px.png" onclick=trans_search_content()></td></tr></table></li>
+
+           </ul>
+        </div>
+        <div id="book_block" class="div2"></div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>新书上架</title>
+    <script type="text/javascript" src="upwenjian.js"></script>
+    <script type="text/javascript" src="donghua.js"></script>
+    <style>
+        .list{text-align:center;float:left;list-style:none;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        .div1{background-color: rgb(80, 82, 82);font-size:26px;padding-top:1.3%;padding-bottom:4%;margin-top:-0.4%;margin-left:-1%;margin-bottom:3%;}
+
+        .mid_div{margin-left:25%;padding-left:10%;margin-top:2%;border-style:groove;margin-right:20%;padding-top:2%;padding-bottom: 4%;}
+        .style_file_content2{width:12%;}
+        .style_file_content{width:5.8%;display: none;}
+        .submit_ebook{display: none;}
+        .list2{text-decoration:none;list-style: none;font-size: 22px;margin-bottom:4%;}
+        .list_respon{text-decoration:none;list-style: none;font-size: 30px;margin-bottom:4%;color:red;}
+        .list3{text-decoration:none;list-style: none;font-size: 22px;margin-bottom:1%;}
+        .buttonstyle{margin-left:70%;background-color:rgb(47, 173, 142);border-radius: 8px;font-size:22px;color:white;}
+    </style>
+</head>
+<body>
+        <div class="div1">
+                <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="list"><a style="text-decoration:none;color:white;" href="shouye.html">首页</a></li>
+                <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="list"><a style="text-decoration:none;color:white;" href="admin_login.html">管理员登录</a>
+                <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="list"><a style="text-decoration:none;color:white;" href="signup_login.html">学生登录</a></li>
+                <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="list"><a style="text-decoration:none;color:white;" href="upwenjian.html">新书上架</a></li>
+                <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="list"><a style="text-decoration:none;color:white;" href></a></li>
+                <li class="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="list"><a style="text-decoration:none;color:white;" href></a></li>
+         </div>
+         <div class="max">
+             <div id="mid_div" class="mid_div">
+                <table cellpadding=10 cellspacing=0px; style="font-size: 110%;">
+                        <tr>
+                            <td><img src="photo/fengmian24px.png"> </td>
+                            <td style="text-align: center;">封面</td>
+                            <td><input type="checkbox" checked="ture"/>默认封面(统一选择)</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                       <img src="photo/name24px.png"></td><td style="text-align: center;">书名</td><td><input id="bookname" style="font-size:18px;" tabindex="1"  ></td></tr>
+                        <tr>
+                            <td><img src="photo/zuozhe24px.png"></td><td style="text-align: center;">作者</td><td><input id="author" style="font-size:18px;"   tabindex="2"></td>
+                        </tr>
+                        <tr>
+                               <td><img src="photo/chubanshe24px.png"></td><td style="text-align: center;">出版社</td><td><input id="publication" style="font-size:18px;"   tabindex="3"></td>
+                           </tr>
+                           <tr>
+                                   <td><img src="photo/leibie24px.png"></td><td style="text-align: center;">类别</td><td><input id="classification" style="font-size:18px;"   tabindex="4"></td>
+                               </tr>
+                               <tr>
+                                       <td><img src="photo/nianfen24px.png"></td><td style="text-align: center;">出版年份</td><td><input id="comeout_year" style="font-size:18px;"   tabindex="5"></td>
+                                   </tr>
+                                   <tr>
+                                           <td><img src="photo/jieshao24px.png"></td><td style="text-align: center;">简介</td><td><textarea id="intro" tabindex="6" style="resize: none;font-size:18px;font-family:Verdana, Geneva, Tahoma, sans-serif;" cols=25; rows=7; maxlength="150"  ></textarea></td>
+                                       </tr>
+                                       <tr>
+                                           <td><input type="image" src="photo/submit132px.png"></td>
+                                           <td><button tabindex="7" id="select_book_box" style="border-color:white;border-radius: 10px;text-align: center;background-color: rgb(47, 173, 142);color:white;font-size: 25px;" onmouseover="upbookbox()" onmouseout="disupbookbox()" onclick=dis_hid()>new book</button><form action="upebook.php" method="post"
+                                               enctype="multipart/form-data" ><input class="style_file_content" name="ebook"
+                                                accept="application/pdf" type="file" id="select_ebook" /><input type="submit"
+                                                 id="submit_ebook" class="submit_ebook"></form></td>
+                   
+                                       </tr>
+                       </table>   
+                       
+                           <li class="list2"><button tabindex="8" class="buttonstyle" onclick="upbookinfo();dis_hid2()">提交信息</button></li>
+                           <li class="list_respon" id="responsebox"></li>
+                           
+
+                 </div>
+                 </li>
+            </div>
+
+         </div>
+</body>
